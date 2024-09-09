@@ -1,4 +1,4 @@
-const API_URL = 'http://172.31.17.35:3000/api';
+const API_URL = 'http://54.196.137.99:3000/api';
 
 export const getJobs = async () => {
   try {
