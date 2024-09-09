@@ -4,7 +4,13 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+// Configurar CORS para permitir todas las solicitudes
+app.use(cors({
+  origin: '*', // Permitir todas las solicitudes de cualquier origen
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'] // Permite estos headers
+}));
+
 app.use(express.json());
 
 // Conectar a MongoDB
