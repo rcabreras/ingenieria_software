@@ -1,0 +1,147 @@
+/* Estilos para la página de perfiles */
+.profiles-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado principal */
+.profiles-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input para la búsqueda */
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botón para crear nuevo perfil */
+.create-button {
+    background-color: #4ecca3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.create-button:hover {
+    background-color: #3ba38f;
+}
+
+/* Estilos para la tabla de perfiles */
+.profiles-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.profiles-table th, 
+.profiles-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.profiles-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.profiles-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botones de acción */
+.edit-button, 
+.delete-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.edit-button {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #ec971f;
+}
+
+.delete-button {
+    background-color: #d9534f;
+    color: white;
+    margin-left: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos para el formulario */
+.profile-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.profile-form .save-button {
+    background-color: #4ecca3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-form .save-button:hover {
+    background-color: #3ba38f;
+}
+
+.profile-form .cancel-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-form .cancel-button:hover {
+    background-color: #c9302c;
+}

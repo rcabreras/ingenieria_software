@@ -1,0 +1,63 @@
+.job-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Distribuye las tarjetas en columnas */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.job-card {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border: 1px solid #e0e0e0; /* Borde más claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animación en hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-card h3 {
+    margin-top: 0;
+    color: #1a1a2e; /* Color del título */
+    font-size: 1.2em; /* Tamaño del título */
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    margin: 10px 0;
+    color: #555; /* Color del texto */
+}
+
+.job-card:hover {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más fuerte en hover */
+}
+
+.apply-button {
+    background-color: #4ecca3; /* Verde claro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    align-self: flex-start; /* Alinea el botón al inicio */
+    margin-top: 15px; /* Espacio superior para separar del texto */
+}
+
+.apply-button:hover {
+    background-color: #3ba38f; /* Un tono más oscuro al pasar el ratón */
+}

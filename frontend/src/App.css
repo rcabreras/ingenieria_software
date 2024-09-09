@@ -1,0 +1,16 @@
+/* Layout para toda la app */
+.app-container {
+    display: flex; /* Usar flexbox para alinear la barra lateral y el contenido */
+    flex-direction: row; /* Asegura que los elementos se coloquen en una fila */
+    height: 100vh; /* Altura completa del viewport */
+    overflow: hidden; /* Evita el desbordamiento del contenedor principal */
+}
+
+/* Ajustes para el área de contenido */
+.content {
+    flex: 1; /* Permite que el contenido tome el espacio restante junto a la barra lateral */
+    padding: 20px;
+    overflow-y: auto; /* Permite desplazamiento dentro del área de contenido */
+    background-color: #f0f2f5; /* Fondo claro para el área de contenido */
+    min-width: 0; /* Importante para prevenir desbordamientos de hijos flexibles */
+}

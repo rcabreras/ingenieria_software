@@ -1,0 +1,52 @@
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 250px; /* Ancho fijo para la barra lateral */
+    height: 100vh; /* Ocupa toda la altura */
+    background-color: #1a1a2e; /* Fondo azul oscuro */
+    color: #ecf0f1; /* Texto claro */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Permite desplazamiento dentro de la barra lateral */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f7f7f7; /* Blanco claro para el título */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Espaciado entre los elementos del menú */
+}
+
+.sidebar ul li a {
+    color: #b1cbbb; /* Color claro para los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #4ecca3; /* Verde claro al pasar el ratón */
+    color: #1a1a2e; /* Texto oscuro en hover */
+}
+
+/* Estilo para la opción seleccionada */
+.sidebar ul li .active {
+    background: #4ecca3; /* Verde claro para la opción activa */
+    color: #1a1a2e; /* Texto oscuro */
+    font-weight: bold; /* Resalta la opción seleccionada */
+}
